@@ -5,7 +5,9 @@ module.exports = {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        'plugin:@typescript-eslint/recommended',
+        'prettier'
     ],
     "overrides": [
         {
@@ -21,13 +23,19 @@ module.exports = {
         }
     ],
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        ecmaVersion: 2021,
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
     },
     "plugins": [
         "react",
         "eslint-plugin-import",
-        "simple-import-sort"
+        "simple-import-sort",
+        'react-hooks',
+        '@typescript-eslint',
+        'prettier'
     ],
     "rules": {
         "@typescript-eslint/consistent-type-definitions": "error",
@@ -52,5 +60,6 @@ module.exports = {
         "simple-import-sort/exports": "error",
         "semi": "off",
         "@typescript-eslint/semi": ["error"],
+        'prettier/prettier': 'error',
     }
 }
