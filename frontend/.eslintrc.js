@@ -49,6 +49,7 @@ module.exports = {
         ],
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-unused-expressions": "error",
+        "@typescript-eslint/space-before-function-paren": "off",
         "eqeqeq": ["error", "smart"],
         "import/no-deprecated": "warn",
         "no-debugger": "error",
@@ -61,5 +62,6 @@ module.exports = {
         "semi": "off",
         "@typescript-eslint/semi": ["error"],
         'prettier/prettier': 'error',
+
     }
 }
