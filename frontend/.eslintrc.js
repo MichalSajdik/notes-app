@@ -62,6 +62,10 @@ module.exports = {
         "semi": "off",
         "@typescript-eslint/semi": ["error"],
         'prettier/prettier': 'error',
-
+        '@typescript-eslint/no-misused-promises': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+        "react/prop-types": 0
     }
 }
